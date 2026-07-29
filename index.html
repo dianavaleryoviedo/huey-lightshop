@@ -117,7 +117,7 @@
 
   <div class="control-row">
     <label>Speed (duration per stroke) <span id="durationVal">1.4s</span></label>
-    <input type="range" id="duration" min="0.1" max="3" step="0.1" value="1.4">
+    <input type="range" id="duration" min="0.1" max="6" step="0.1" value="2.8">
   </div>
 
   <div class="control-row">
@@ -128,11 +128,11 @@
   <div class="control-row">
     <label>Choppiness</label>
     <select id="ease">
-      <option value="power2.inOut">Smooth (organic growth)</option>
+      <option value="power2.inOut" selected>Smooth (organic growth)</option>
       <option value="power1.inOut">Soft smooth</option>
       <option value="steps(8)">Slightly stepped</option>
       <option value="steps(6)">Choppy</option>
-      <option value="steps(3)" selected>Very choppy</option>
+      <option value="steps(3)">Very choppy</option>
       <option value="steps(1)">Stop-motion (hard cut)</option>
     </select>
   </div>
@@ -145,10 +145,10 @@
   <div class="control-row">
     <label>Order</label>
     <select id="from">
-      <option value="start" selected>Start to end</option>
+      <option value="start">Start to end</option>
       <option value="end">End to start</option>
       <option value="center">Center outward</option>
-      <option value="edges">Edges inward</option>
+      <option value="edges" selected>Edges inward</option>
       <option value="random">Random</option>
     </select>
   </div>
