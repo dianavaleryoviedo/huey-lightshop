@@ -9,22 +9,23 @@
   html, body {
     height: 100%;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
     background: #FFFBF0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
 
   .stage {
-    position: relative;
-    width: 90vmin;
-    height: 90vmin;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
   }
 
   svg#art {
     width: 100%;
     height: 100%;
+    display: block;
   }
 
   #maskStrokes path {
@@ -94,7 +95,7 @@
 <body>
 
 <div class="stage">
-  <svg id="art" viewBox="0 0 1426.12 988.89" xmlns="http://www.w3.org/2000/svg">
+  <svg id="art" viewBox="0 0 1426.12 988.89" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <mask id="drawMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1426.12" height="988.89">
         <rect x="0" y="0" width="1426.12" height="988.89" fill="black"/>
