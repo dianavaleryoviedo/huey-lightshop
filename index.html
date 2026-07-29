@@ -25,6 +25,21 @@
     width: 98vw;
   }
 
+  .center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;           /* adjust to taste relative to the frame */
+    z-index: 1;           /* sits above the background, behind or above the vines — see note below */
+  }
+
+.center-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
   svg#art {
     width: 100%;
     height: auto;
@@ -99,6 +114,13 @@
 <body>
 
 <div class="stage">
+
+  <div class="center-image">
+    <img src="https://cdn.shopify.com/s/files/1/0315/4984/9731/files/DreamlogoParchment_1.svg?v=1782859828" alt="">
+  </div>
+
+
+  
   <svg id="art" viewBox="0 0 1426.12 988.89" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <mask id="drawMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1426.12" height="988.89">
